@@ -1,5 +1,6 @@
 turf-bboxPolygon
 ================
+[![Build Status](https://travis-ci.org/Turfjs/turf-bboxPolygon.svg?branch=master)](https://travis-ci.org/Turfjs/turf-bboxPolygon)
 
 Takes a bbox and returns the equivalent polygon feature.
 
