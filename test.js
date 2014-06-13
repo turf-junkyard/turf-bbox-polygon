@@ -13,7 +13,7 @@ test('bboxPolygon', function(t){
 test('bboxPolygon valid geojson', function (t) {
   var poly = bboxPolygon([0,0,10,10]),
     coordinates = poly.geometry.coordinates;
-  t.ok(poly, 'should have valid geojson coordinates.');
+  t.ok(poly, 'should be valid geojson.');
   t.equal(coordinates[0].length, 5);
   t.equal(coordinates[0][0][0], coordinates[0][coordinates.length - 1][0]);
   t.equal(coordinates[0][0][1], coordinates[0][coordinates.length - 1][1]);
