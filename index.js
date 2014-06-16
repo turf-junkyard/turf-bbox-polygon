@@ -10,7 +10,8 @@ module.exports = function(bbox){
     lowLeft,
     lowRight,
     topRight,
-    topLeft
+    topLeft,
+    lowLeft
   ]])
   return poly
 }
