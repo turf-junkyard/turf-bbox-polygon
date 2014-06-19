@@ -4,10 +4,32 @@ turf-bboxPolygon
 
 Takes a bbox and returns the equivalent polygon feature.
 
-```javascript
+###Install
+
+```sh
+npm install turf-bbox-polygon
+```
+
+###Parameters
+
+|name|description|
+|---|---|
+|bbox|[xLow, yLow, xHigh, yHigh]|
+
+###Usage
+
+```js
+averaged = average(polygonFC, pointFC, inField, outField)
+```
+
+###Example
+
+```js
 var bboxPoly = require('turf-bbox-polygon')
+
 var bbox = [0,0,10,10]
 
 var poly = bboxPoly(bbox)
+
 console.log(poly)
 ```
