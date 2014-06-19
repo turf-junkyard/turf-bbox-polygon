@@ -14,7 +14,7 @@ npm install turf-bbox-polygon
 
 |name|description|
 |---|---|
-|bbox|[xLow, yLow, xHigh, yHigh]|
+|bbox|Bounding box array in the form: ```[xLow, yLow, xHigh, yHigh]```|
 
 ###Usage
 
