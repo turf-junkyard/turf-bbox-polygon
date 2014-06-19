@@ -19,7 +19,7 @@ npm install turf-bbox-polygon
 ###Usage
 
 ```js
-averaged = average(polygonFC, pointFC, inField, outField)
+bboxPoly(bbox)
 ```
 
 ###Example
