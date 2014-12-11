@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/morganherlocker/turf-bboxPolygon",
   "devDependencies": {
-    "tape": "^2.13.3"
+    "benchmark": "^1.0.0",
+    "tape": "^3.0.3"
   },
   "dependencies": {
     "turf-polygon": "^0.1.1"
