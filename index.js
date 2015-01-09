@@ -7,13 +7,11 @@ var polygon = require('turf-polygon');
 * @param {Array} bbox - Array of bounding box coordinates in the form: ```[xLow, yLow, xHigh, yHigh]```
 * @return {Polygon} poly - A GeoJSON Polygon of the bounding box
 * @example
-* var bboxPoly = require('turf-bbox-polygon')
+* var bbox = [0,0,10,10];
 *
-* var bbox = [0,0,10,10]
+* var poly = turf.bboxPoly(bbox);
 *
-* var poly = bboxPoly(bbox)
-*
-* console.log(poly)
+* //=poly
 */
 
 module.exports = function(bbox){
