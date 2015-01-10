@@ -4,8 +4,8 @@ var polygon = require('turf-polygon');
 * Takes a bbox and returns the equivalent polygon feature.
 *
 * @module turf/bbox-polygon
-* @param {Array} bbox - Array of bounding box coordinates in the form: ```[xLow, yLow, xHigh, yHigh]```
-* @return {Polygon} poly - A GeoJSON Polygon of the bounding box
+* @param {Array} bbox - an Array of bounding box coordinates in the form: ```[xLow, yLow, xHigh, yHigh]```
+* @return {Polygon} a Polygon of the bounding box
 * @example
 * var bbox = [0, 0, 10, 10];
 *
