@@ -1,11 +1,11 @@
 var polygon = require('turf-polygon');
 
 /**
-* Takes a bbox and returns the equivalent polygon feature.
+* Takes a bbox and returns the equivalent {@link Polygon} feature.
 *
 * @module turf/bbox-polygon
-* @param {Array} bbox an Array of bounding box coordinates in the form: ```[xLow, yLow, xHigh, yHigh]```
-* @return {Polygon} a Polygon of the bounding box
+* @param {Array<number>} bbox an Array of bounding box coordinates in the form: ```[xLow, yLow, xHigh, yHigh]```
+* @return {Polygon} a Polygon representation of the bounding box
 * @example
 * var bbox = [0, 0, 10, 10];
 *
