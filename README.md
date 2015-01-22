@@ -1,35 +1,43 @@
-turf-bboxPolygon
-================
-[![Build Status](https://travis-ci.org/Turfjs/turf-bboxPolygon.svg?branch=master)](https://travis-ci.org/Turfjs/turf-bboxPolygon)
+# turf-bbox-polygon
 
-Takes a bbox and returns the equivalent polygon feature.
+[![build status](https://secure.travis-ci.org/Turfjs/turf-bboxPolygon.png)](http://travis-ci.org/Turfjs/turf-bboxPolygon)
 
-###Install
+turf bboxPolygon module
+
+
+### `turf.bbox-polygon(bbox)`
+
+Takes a bbox and returns the equivalent Polygon feature.
+
+
+### Parameters
+
+| parameter | type           | description                                                                        |
+| --------- | -------------- | ---------------------------------------------------------------------------------- |
+| `bbox`    | Array.<number> | an Array of bounding box coordinates in the form: ```[xLow, yLow, xHigh, yHigh]``` |
+
+
+### Example
+
+```js
+var bbox = [0, 0, 10, 10];
+
+var poly = turf.bboxPolygon(bbox);
+
+//=poly
+```
+
+## Installation
+
+Requires [nodejs](http://nodejs.org/).
 
 ```sh
-npm install turf-bbox-polygon
+$ npm install turf-bbox-polygon
 ```
 
-###Parameters
+## Tests
 
-|name|description|
-|---|---|
-|bbox|Bounding box array in the form: ```[xLow, yLow, xHigh, yHigh]```|
-
-###Usage
-
-```js
-bboxPoly(bbox)
+```sh
+$ npm test
 ```
 
-###Example
-
-```js
-var bboxPoly = require('turf-bbox-polygon')
-
-var bbox = [0,0,10,10]
-
-var poly = bboxPoly(bbox)
-
-console.log(poly)
-```
