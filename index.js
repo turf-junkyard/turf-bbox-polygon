@@ -6,7 +6,7 @@ var polygon = require('turf-polygon');
  * @module turf/bbox-polygon
  * @category measurement
  * @param {Array<number>} bbox an Array of bounding box coordinates in the form: ```[xLow, yLow, xHigh, yHigh]```
- * @return {Polygon} a Polygon representation of the bounding box
+ * @return {Feature<Polygon>} a Polygon representation of the bounding box
  * @example
  * var bbox = [0, 0, 10, 10];
  *
