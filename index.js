@@ -1,7 +1,7 @@
 var polygon = require('turf-polygon');
 
 /**
- * Takes a bbox and returns the equivalent {@link Polygon} feature.
+ * Takes a bbox and returns an equivalent {@link Polygon|polygon}.
  *
  * @module turf/bbox-polygon
  * @category measurement
