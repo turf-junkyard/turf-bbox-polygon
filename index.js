@@ -15,7 +15,7 @@ var polygon = require('turf-polygon');
  * //=poly
  */
 
-module.exports = function(bbox){
+module.exports = function(bbox) {
   var lowLeft = [bbox[0], bbox[1]];
   var topLeft = [bbox[0], bbox[3]];
   var topRight = [bbox[2], bbox[3]];
@@ -29,4 +29,4 @@ module.exports = function(bbox){
     lowLeft
   ]]);
   return poly;
-}
+};
