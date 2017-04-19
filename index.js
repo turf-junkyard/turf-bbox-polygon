@@ -15,18 +15,23 @@ var polygon = require('turf-polygon');
  * //=poly
  */
 
-module.exports = function(bbox) {
+module.exports = function(bbox, properties) {
   var lowLeft = [bbox[0], bbox[1]];
   var topLeft = [bbox[0], bbox[3]];
   var topRight = [bbox[2], bbox[3]];
   var lowRight = [bbox[2], bbox[1]];
 
-  var poly = polygon([[
+  var coords = [[
     lowLeft,
     lowRight,
     topRight,
     topLeft,
     lowLeft
-  ]]);
-  return poly;
+  ]];
+
+  if (typeof properties !== "undefined") {
+    return polygon(coords, properties);
+  } else {
+    return polygon(coords);
+  }
 };
