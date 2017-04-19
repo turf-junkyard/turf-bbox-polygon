@@ -19,3 +19,15 @@ test('bboxPolygon valid geojson', function (t) {
   t.equal(coordinates[0][0][1], coordinates[0][coordinates.length - 1][1]);
   t.end();
 });
+
+test('bboxPolygon accepts properties', function (t) {
+  var poly = bboxPolygon([0,0,10,10], {
+      "name": "Name 1",
+      "value": "Value 1"
+    }),
+    coordinates = poly.geometry.coordinates,
+    properties = poly.properties;
+  t.ok(poly, 'should accept properties.');
+  t.equal(properties.name, "Name 1");
+  t.end();
+});
